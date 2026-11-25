@@ -1,0 +1,1867 @@
+{
+ "version": 1,
+ "model": "claude-sonnet-5.5",
+ "created": "2026-11-18T06:07:10+00:00",
+ "budget_warned": true,
+ "items": {
+  "5158": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 7.5433,
+     "seconds": 29.2,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 7.7823,
+     "seconds": 27.2,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 4.2502,
+     "seconds": 15.2,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 5.0204,
+     "seconds": 20.1,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 24.5962,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": [],
+     "note": "初回の失敗はハーネス自身の生ログ配置による誤検出。planner の変更は無し"
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 28,
+     "final_lines": 29,
+     "changed_lines": 10,
+     "change_ratio": 0.357,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 21,
+     "changed_source_files": [
+      "PartitionStep.java",
+      "StepExecutionSplitter.java",
+      "RemoteStepExecutionAggregator.java",
+      "SimpleStepExecutionSplitter.java",
+      "scalability.adoc"
+     ],
+     "mentioned": [
+      "scalability.adoc"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 24.5962,
+    "credits_log": 24.5962
+   },
+   "failure": null,
+   "warnings": [
+    "planner 応答は生ログから復旧（再実行せず・二重消費回避）"
+   ],
+   "started": "2026-11-18T06:07:18+00:00",
+   "input": {
+    "issue_chars": 6548,
+    "diff_chars": 20629,
+    "diff_truncated": false
+   },
+   "finished": "2026-11-18T06:09:54+00:00",
+   "review_issues": 4
+  },
+  "5514": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 6.5519,
+     "seconds": 29.0,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 8.2362,
+     "seconds": 26.5,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 11.2664,
+     "seconds": 34.2,
+     "attempts": 2,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.9558,
+     "seconds": 19.4,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 31.0103,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": [],
+     "note": "初回の失敗はハーネス自身の生ログ配置による誤検出。planner の変更は無し"
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 37,
+     "final_lines": 33,
+     "changed_lines": 9,
+     "change_ratio": 0.243,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 40,
+     "changed_source_files": [
+      "JobFlowExecutor.java",
+      "SimpleFlow.java"
+     ],
+     "mentioned": [
+      "JobFlowExecutor.java",
+      "SimpleFlow.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 31.0103,
+    "credits_log": 31.0103
+   },
+   "failure": null,
+   "warnings": [
+    "planner 応答は生ログから復旧（再実行せず・二重消費回避）",
+    "reviewer が pass と判定したが issues があったため revise に正規化",
+    "reviewer 応答は生ログ（try2）から復旧（再実行せず・二重消費回避）"
+   ],
+   "started": "2026-11-18T06:07:48+00:00",
+   "input": {
+    "issue_chars": 13016,
+    "diff_chars": 9272,
+    "diff_truncated": false
+   },
+   "finished": "2026-11-18T06:12:16+00:00",
+   "verdict_raw": "pass",
+   "review_issues": 3
+  },
+  "5518": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 4.129,
+     "seconds": 23.0,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 5.6577,
+     "seconds": 23.6,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 3.3525,
+     "seconds": 13.3,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.2875,
+     "seconds": 16.5,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 17.4267,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 45,
+     "final_lines": 43,
+     "changed_lines": 3,
+     "change_ratio": 0.067,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 37,
+     "changed_source_files": [
+      "FixedLengthTokenizer.java"
+     ],
+     "mentioned": [
+      "FixedLengthTokenizer.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 17.4267,
+    "credits_log": 17.4267
+   },
+   "failure": null,
+   "warnings": [
+    "reviewer が pass と判定したが issues があったため revise に正規化"
+   ],
+   "started": "2026-11-18T06:12:28+00:00",
+   "input": {
+    "issue_chars": 1927,
+    "diff_chars": 3928,
+    "diff_truncated": false
+   },
+   "verdict_raw": "pass",
+   "review_issues": 2,
+   "finished": "2026-11-18T06:13:45+00:00"
+  },
+  "5519": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 4.0789,
+     "seconds": 22.6,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 5.1737,
+     "seconds": 20.1,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 3.1078,
+     "seconds": 12.6,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 3.9296,
+     "seconds": 17.0,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 16.29,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 45,
+     "final_lines": 32,
+     "changed_lines": 24,
+     "change_ratio": 0.533,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 21,
+     "changed_source_files": [
+      "DelimitedLineTokenizer.java"
+     ],
+     "mentioned": [
+      "DelimitedLineTokenizer.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 16.29,
+    "credits_log": 16.29
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T06:13:45+00:00",
+   "input": {
+    "issue_chars": 1598,
+    "diff_chars": 3157,
+    "diff_truncated": false
+   },
+   "verdict_raw": "revise",
+   "review_issues": 4,
+   "finished": "2026-11-18T06:14:58+00:00"
+  },
+  "5520": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 3.727,
+     "seconds": 20.6,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 4.9325,
+     "seconds": 19.6,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 3.0695,
+     "seconds": 13.8,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.2387,
+     "seconds": 17.6,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 15.9677,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 35,
+     "final_lines": 37,
+     "changed_lines": 6,
+     "change_ratio": 0.171,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 37,
+     "changed_source_files": [
+      "FlatFileItemReaderBuilder.java"
+     ],
+     "mentioned": [
+      "FlatFileItemReaderBuilder.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 15.9677,
+    "credits_log": 15.9677
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T06:14:58+00:00",
+   "input": {
+    "issue_chars": 1390,
+    "diff_chars": 2794,
+    "diff_truncated": false
+   },
+   "verdict_raw": "revise",
+   "review_issues": 4,
+   "finished": "2026-11-18T06:16:09+00:00"
+  },
+  "5527": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 5.9471,
+     "seconds": 24.5,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 7.7541,
+     "seconds": 24.7,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 5.149,
+     "seconds": 14.0,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 5.0763,
+     "seconds": 20.6,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 23.9265,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 43,
+     "final_lines": 39,
+     "changed_lines": 16,
+     "change_ratio": 0.372,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 32,
+     "changed_source_files": [
+      "ChunkOrientedStep.java"
+     ],
+     "mentioned": [
+      "ChunkOrientedStep.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 23.9265,
+    "credits_log": 23.9265
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T06:16:09+00:00",
+   "input": {
+    "issue_chars": 6897,
+    "diff_chars": 15171,
+    "diff_truncated": false
+   },
+   "verdict_raw": "revise",
+   "review_issues": 5,
+   "finished": "2026-11-18T06:17:34+00:00"
+  },
+  "5539": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 4.2866,
+     "seconds": 22.3,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 5.649,
+     "seconds": 23.1,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 2.954,
+     "seconds": 9.9,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.1152,
+     "seconds": 16.2,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 17.0048,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 32,
+     "final_lines": 29,
+     "changed_lines": 8,
+     "change_ratio": 0.25,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 35,
+     "changed_source_files": [
+      "JpaPagingItemReader.java"
+     ],
+     "mentioned": [
+      "JpaPagingItemReader.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 17.0048,
+    "credits_log": 17.0048
+   },
+   "failure": null,
+   "warnings": [
+    "reviewer が pass と判定したが issues があったため revise に正規化"
+   ],
+   "started": "2026-11-18T06:17:34+00:00",
+   "input": {
+    "issue_chars": 2624,
+    "diff_chars": 3594,
+    "diff_truncated": false
+   },
+   "verdict_raw": "pass",
+   "review_issues": 2,
+   "finished": "2026-11-18T06:18:45+00:00"
+  },
+  "5556": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 3.9698,
+     "seconds": 23.5,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 4.7383,
+     "seconds": 20.0,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 3.0067,
+     "seconds": 14.1,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.2437,
+     "seconds": 17.5,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 15.9585,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 29,
+     "final_lines": 31,
+     "changed_lines": 5,
+     "change_ratio": 0.172,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 37,
+     "changed_source_files": [
+      "appendix.adoc"
+     ],
+     "mentioned": [
+      "appendix.adoc"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 15.9585,
+    "credits_log": 15.9585
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T06:18:45+00:00",
+   "input": {
+    "issue_chars": 1573,
+    "diff_chars": 1762,
+    "diff_truncated": false
+   },
+   "verdict_raw": "revise",
+   "review_issues": 4,
+   "finished": "2026-11-18T06:20:01+00:00"
+  },
+  "5558": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 6.1362,
+     "seconds": 32.6,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 7.9111,
+     "seconds": 30.1,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 4.455,
+     "seconds": 15.5,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 5.9672,
+     "seconds": 22.8,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 24.4695,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 35,
+     "final_lines": 35,
+     "changed_lines": 8,
+     "change_ratio": 0.229,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 46,
+     "changed_source_files": [
+      "ChunkOrientedStep.java"
+     ],
+     "mentioned": [
+      "ChunkOrientedStep.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 24.4695,
+    "credits_log": 24.4695
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T06:20:01+00:00",
+   "input": {
+    "issue_chars": 4420,
+    "diff_chars": 7422,
+    "diff_truncated": false
+   },
+   "verdict_raw": "revise",
+   "review_issues": 5,
+   "finished": "2026-11-18T06:21:42+00:00"
+  },
+  "5562": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 3.8684,
+     "seconds": 23.2,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 4.7512,
+     "seconds": 20.0,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 3.016,
+     "seconds": 13.1,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.0958,
+     "seconds": 16.4,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 15.7314,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 25,
+     "final_lines": 25,
+     "changed_lines": 5,
+     "change_ratio": 0.2,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 20,
+     "changed_source_files": [
+      ".gitignore"
+     ],
+     "mentioned": [
+      ".gitignore"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 15.7314,
+    "credits_log": 15.7314
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T06:21:42+00:00",
+   "input": {
+    "issue_chars": 3009,
+    "diff_chars": 519,
+    "diff_truncated": false
+   },
+   "verdict_raw": "revise",
+   "review_issues": 4,
+   "finished": "2026-11-18T06:22:55+00:00"
+  },
+  "5563": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 5.801,
+     "seconds": 28.4,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 7.1308,
+     "seconds": 26.1,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 4.4335,
+     "seconds": 15.1,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 5.0936,
+     "seconds": 20.2,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 22.4589,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 54,
+     "final_lines": 53,
+     "changed_lines": 8,
+     "change_ratio": 0.148,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 40,
+     "changed_source_files": [
+      "EnableBatchProcessing.java",
+      "LateBindingAutowireCandidateResolver.java",
+      "LateBindingBeanFactoryPostProcessor.java",
+      "DefaultBatchConfiguration.java"
+     ],
+     "mentioned": [
+      "EnableBatchProcessing.java",
+      "LateBindingAutowireCandidateResolver.java",
+      "LateBindingBeanFactoryPostProcessor.java",
+      "DefaultBatchConfiguration.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 22.4589,
+    "credits_log": 22.4589
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T06:22:55+00:00",
+   "input": {
+    "issue_chars": 6122,
+    "diff_chars": 7935,
+    "diff_truncated": false
+   },
+   "verdict_raw": "revise",
+   "review_issues": 5,
+   "finished": "2026-11-18T06:24:25+00:00"
+  },
+  "5566": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 10.7671,
+     "seconds": 34.4,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 11.0103,
+     "seconds": 32.5,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 7.1287,
+     "seconds": 24.6,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 5.2678,
+     "seconds": 21.0,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 34.1739,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 39,
+     "final_lines": 39,
+     "changed_lines": 13,
+     "change_ratio": 0.333,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 35,
+     "changed_source_files": [
+      "BatchObservabilityBeanPostProcessor.java",
+      "EnableBatchProcessing.java",
+      "DefaultBatchConfiguration.java",
+      "AbstractJob.java",
+      "JobBuilderHelper.java",
+      "JobOperatorFactoryBean.java",
+      "TaskExecutorJobOperator.java",
+      "MicrometerMetrics.java",
+      "AbstractStep.java",
+      "ChunkOrientedStepBuilder.java",
+      "StepBuilderHelper.java",
+      "SimpleStepFactoryBean.java",
+      "micrometer.adoc"
+     ],
+     "mentioned": [
+      "BatchObservabilityBeanPostProcessor.java",
+      "EnableBatchProcessing.java",
+      "DefaultBatchConfiguration.java",
+      "TaskExecutorJobOperator.java",
+      "micrometer.adoc"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 34.1739,
+    "credits_log": 34.1739
+   },
+   "failure": null,
+   "warnings": [
+    "入力サイズ 51638 chars が警告閾値 45000 を超過"
+   ],
+   "started": "2026-11-18T06:24:25+00:00",
+   "input": {
+    "issue_chars": 2610,
+    "diff_chars": 49028,
+    "diff_truncated": false
+   },
+   "verdict_raw": "revise",
+   "review_issues": 6,
+   "finished": "2026-11-18T06:26:18+00:00"
+  },
+  "5570": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 3.9819,
+     "seconds": 25.8,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 4.9428,
+     "seconds": 21.3,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 3.0315,
+     "seconds": 13.8,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.6601,
+     "seconds": 19.0,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 16.6163,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 35,
+     "final_lines": 32,
+     "changed_lines": 8,
+     "change_ratio": 0.229,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 24,
+     "skipped": "diff が無い題材のためファイル名チェックは省略"
+    },
+    "credits_consistent": true,
+    "credits_state": 16.6163,
+    "credits_log": 16.6163
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T06:26:18+00:00",
+   "input": {
+    "issue_chars": 2365,
+    "diff_chars": 0,
+    "diff_truncated": false,
+    "has_diff": false
+   },
+   "verdict_raw": "revise",
+   "review_issues": 5,
+   "finished": "2026-11-18T06:27:38+00:00"
+  },
+  "5576": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 8.1292,
+     "seconds": 30.0,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 8.0873,
+     "seconds": 26.3,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 6.1262,
+     "seconds": 16.1,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.5179,
+     "seconds": 18.1,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 26.8606,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 37,
+     "final_lines": 28,
+     "changed_lines": 10,
+     "change_ratio": 0.27,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 38,
+     "changed_source_files": [
+      "SplitState.java",
+      "StepContextRepeatCallback.java",
+      "AbstractStep.java",
+      "AsyncItemProcessor.java",
+      "ChunkOrientedStep.java",
+      "ChunkTaskExecutorItemWriter.java"
+     ],
+     "mentioned": [
+      "StepContextRepeatCallback.java",
+      "AbstractStep.java",
+      "AsyncItemProcessor.java",
+      "ChunkOrientedStep.java",
+      "ChunkTaskExecutorItemWriter.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 26.8606,
+    "credits_log": 26.8606
+   },
+   "failure": null,
+   "warnings": [
+    "reviewer が pass と判定したが issues があったため revise に正規化"
+   ],
+   "started": "2026-11-18T06:27:39+00:00",
+   "input": {
+    "issue_chars": 10194,
+    "diff_chars": 21491,
+    "diff_truncated": false
+   },
+   "verdict_raw": "pass",
+   "review_issues": 2,
+   "finished": "2026-11-18T06:29:09+00:00"
+  },
+  "5585": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 5.8959,
+     "seconds": 27.2,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 7.4628,
+     "seconds": 25.8,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 5.0088,
+     "seconds": 16.1,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.8728,
+     "seconds": 20.0,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 23.2403,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 32,
+     "final_lines": 28,
+     "changed_lines": 10,
+     "change_ratio": 0.312,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 19,
+     "changed_source_files": [
+      "ItemProcessListener.java",
+      "ItemReadListener.java",
+      "ItemWriteListener.java",
+      "ChunkOrientedStep.java",
+      "intercepting-execution.adoc"
+     ],
+     "mentioned": [
+      "ItemProcessListener.java",
+      "ItemReadListener.java",
+      "ItemWriteListener.java",
+      "ChunkOrientedStep.java",
+      "intercepting-execution.adoc"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 23.2403,
+    "credits_log": 23.2403
+   },
+   "failure": null,
+   "warnings": [
+    "reviewer が pass と判定したが issues があったため revise に正規化"
+   ],
+   "started": "2026-11-18T06:29:09+00:00",
+   "input": {
+    "issue_chars": 2172,
+    "diff_chars": 15869,
+    "diff_truncated": false
+   },
+   "verdict_raw": "pass",
+   "review_issues": 3,
+   "finished": "2026-11-18T06:30:39+00:00"
+  },
+  "5586": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 5.3053,
+     "seconds": 24.0,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 6.7174,
+     "seconds": 22.2,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 4.3155,
+     "seconds": 13.7,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.931,
+     "seconds": 21.1,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 21.2692,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 35,
+     "final_lines": 34,
+     "changed_lines": 6,
+     "change_ratio": 0.171,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 19,
+     "changed_source_files": [
+      "migration-mariadb.sql"
+     ],
+     "mentioned": [
+      "migration-mariadb.sql"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 21.2692,
+    "credits_log": 21.2692
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T06:30:39+00:00",
+   "input": {
+    "issue_chars": 4836,
+    "diff_chars": 7217,
+    "diff_truncated": false
+   },
+   "verdict_raw": "revise",
+   "review_issues": 4,
+   "finished": "2026-11-18T06:32:00+00:00"
+  },
+  "5589": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 3.683,
+     "seconds": 20.9,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 4.8891,
+     "seconds": 20.7,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 3.1188,
+     "seconds": 13.5,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 3.8514,
+     "seconds": 15.2,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 15.5423,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 29,
+     "final_lines": 26,
+     "changed_lines": 8,
+     "change_ratio": 0.276,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 33,
+     "changed_source_files": [
+      "MongoCursorItemReader.java"
+     ],
+     "mentioned": [
+      "MongoCursorItemReader.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 15.5423,
+    "credits_log": 15.5423
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T06:32:00+00:00",
+   "input": {
+    "issue_chars": 1191,
+    "diff_chars": 2722,
+    "diff_truncated": false
+   },
+   "verdict_raw": "revise",
+   "review_issues": 6,
+   "finished": "2026-11-18T06:33:11+00:00"
+  },
+  "5594": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 7.301,
+     "seconds": 29.5,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 9.4245,
+     "seconds": 26.9,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 5.7988,
+     "seconds": 18.8,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 5.0956,
+     "seconds": 19.9,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 27.6199,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 31,
+     "final_lines": 31,
+     "changed_lines": 5,
+     "change_ratio": 0.161,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 38,
+     "changed_source_files": [
+      "ChunkOrientedStep.java"
+     ],
+     "mentioned": [
+      "ChunkOrientedStep.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 27.6199,
+    "credits_log": 27.6199
+   },
+   "failure": null,
+   "warnings": [
+    "reviewer が pass と判定したが issues があったため revise に正規化"
+   ],
+   "started": "2026-11-18T06:33:11+00:00",
+   "input": {
+    "issue_chars": 4456,
+    "diff_chars": 27350,
+    "diff_truncated": false
+   },
+   "verdict_raw": "pass",
+   "review_issues": 3,
+   "finished": "2026-11-18T06:34:46+00:00"
+  },
+  "5597": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 4.5921,
+     "seconds": 23.3,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 5.4718,
+     "seconds": 21.0,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 3.7616,
+     "seconds": 14.7,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 3.822,
+     "seconds": 15.4,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 17.6475,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 29,
+     "final_lines": 27,
+     "changed_lines": 9,
+     "change_ratio": 0.31,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 13,
+     "changed_source_files": [
+      "MultiResourceItemWriter.java"
+     ],
+     "mentioned": [
+      "MultiResourceItemWriter.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 17.6475,
+    "credits_log": 17.6475
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T06:34:46+00:00",
+   "input": {
+    "issue_chars": 2324,
+    "diff_chars": 6333,
+    "diff_truncated": false
+   },
+   "verdict_raw": "revise",
+   "review_issues": 5,
+   "finished": "2026-11-18T06:36:01+00:00"
+  },
+  "5598": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 7.3588,
+     "seconds": 35.4,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 9.9003,
+     "seconds": 30.3,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 5.3042,
+     "seconds": 19.7,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.9264,
+     "seconds": 18.6,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 27.4897,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 59,
+     "final_lines": 58,
+     "changed_lines": 3,
+     "change_ratio": 0.051,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 51,
+     "changed_source_files": [
+      "externalizing-execution.adoc",
+      "whatsnew.adoc",
+      "RemoteChunkingManagerBuilder.java",
+      "RemoteChunkingManagerStepBuilder.java",
+      "RemoteChunkingManagerStepBuilderFactory.java",
+      "BatchIntegrationConfiguration.java",
+      "EnableBatchIntegration.java",
+      "ManagerConfiguration.java"
+     ],
+     "mentioned": [
+      "RemoteChunkingManagerBuilder.java",
+      "RemoteChunkingManagerStepBuilder.java",
+      "RemoteChunkingManagerStepBuilderFactory.java",
+      "BatchIntegrationConfiguration.java",
+      "EnableBatchIntegration.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 27.4897,
+    "credits_log": 27.4897
+   },
+   "failure": null,
+   "warnings": [
+    "入力サイズ 46313 chars が警告閾値 45000 を超過",
+    "reviewer が pass と判定したが issues があったため revise に正規化"
+   ],
+   "started": "2026-11-18T06:36:01+00:00",
+   "input": {
+    "issue_chars": 1426,
+    "diff_chars": 44887,
+    "diff_truncated": false
+   },
+   "verdict_raw": "pass",
+   "review_issues": 2,
+   "finished": "2026-11-18T06:37:45+00:00"
+  },
+  "5599": {
+   "status": "done",
+   "roles": {
+    "planner": {
+     "ok": true,
+     "credits": 5.761,
+     "seconds": 29.5,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 7.4761,
+     "seconds": 27.7,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 5.1468,
+     "seconds": 20.0,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 5.883,
+     "seconds": 22.7,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 24.2669,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_title": true,
+     "errors": []
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 46,
+     "final_lines": 46,
+     "changed_lines": 11,
+     "change_ratio": 0.239,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 36,
+     "changed_source_files": [
+      "ChunkOrientedStep.java"
+     ],
+     "mentioned": [
+      "ChunkOrientedStep.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 24.2669,
+    "credits_log": 24.2669
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T06:37:45+00:00",
+   "input": {
+    "issue_chars": 4333,
+    "diff_chars": 7400,
+    "diff_truncated": false
+   },
+   "verdict_raw": "revise",
+   "review_issues": 5,
+   "finished": "2026-11-18T06:39:26+00:00"
+  }
+ }
+}

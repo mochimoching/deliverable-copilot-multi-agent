@@ -1,0 +1,47 @@
+{
+ "budget_stop_credits": 600,
+ "budget_warn_credits": 300,
+ "bug_section": "バグの発生タイミング",
+ "call_timeout_sec": 900,
+ "copilot_bin": "/home/hatch/.local/bin/copilot",
+ "diff_change_warn_ratio": 0.6,
+ "diff_max_chars": 60000,
+ "exclude_issues": [
+  3757,
+  4169,
+  4804
+ ],
+ "fetch": {
+  "enabled": true,
+  "issue_numbers": null,
+  "max_comments": 20,
+  "max_diff_size": 50000,
+  "max_issues": 100,
+  "milestone": "6.1.0-RC1",
+  "order": "asc",
+  "owner": "spring-projects",
+  "repo": "spring-batch",
+  "state": "closed"
+ },
+ "format_retries": 1,
+ "guideline_files": {
+  "review": "REVIEW_GUIDELINE.md",
+  "summary": "SUMMARY_GUIDELINE.md",
+  "translation": "TRANSLATION_GUIDELINE.md"
+ },
+ "guidelines_dir": "/home/hatch/workspace/github_issue_translate",
+ "input_base": null,
+ "input_warn_chars": 45000,
+ "model": "claude-sonnet-5.5",
+ "required_sections": [
+  "課題概要",
+  "原因",
+  "対応方針"
+ ],
+ "summary_template_sections": [
+  "課題概要",
+  "原因",
+  "対応方針"
+ ],
+ "translation_min_ratio": 0.35
+}

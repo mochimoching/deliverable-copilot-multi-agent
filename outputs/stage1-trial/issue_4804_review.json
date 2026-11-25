@@ -1,0 +1,47 @@
+{
+  "verdict": "revise",
+  "issues": [
+    {
+      "severity": "must",
+      "location": "利用者への影響 >「挙動を変えない内部変更」",
+      "reason": "「SQLの意味は変えない想定」と書いているが、差分では getJobInstanceIds が getQuery() を外しており、テーブル接頭辞を設定している利用者で別テーブルを参照するか失敗する恐れがある。「挙動を変えない」という読みは根拠が弱く、読み手を誤らせる。",
+      "fix": "断定をやめ、getJobInstanceIds の getQuery() 除去を利用者への影響に回帰の可能性（テーブル接頭辞利用者に影響）として明記し、要確認と書く。"
+    },
+    {
+      "severity": "must",
+      "location": "概要「内部リファクタリング」／利用者への影響",
+      "reason": "公開APIの setJdbcClient の追加、protected の getJdbcTemplate の廃止予定化、afterPropertiesSet の検証追加を含むのに内部変更とだけ説明している。そのため、JdbcOperations 未設定のまま setJdbcClient だけを設定すると初期化に失敗するといった、サブクラスや独自構成の利用者への注意が欠けている。",
+      "fix": "「内部中心だが公開／継承向けAPIの変更を含む」と書き改め、afterPropertiesSet が jdbcTemplate と jdbcClient の両方を必須とする点と、setJdbcClient だけでは足りない点を影響に追記する。"
+    },
+    {
+      "severity": "should",
+      "location": "利用者への影響 >「戻り値の仕様は同じ（該当なしは null など）」",
+      "reason": "JdbcExecutionContextDao では該当なしの場合に null ではなく orElseGet(ExecutionContext::new) で空の ExecutionContext を返す。「null など」では不正確で、仕様が同じという断定にも根拠が足りない。",
+      "fix": "メソッドごとの該当なし時の戻り値（null／空の ExecutionContext）を差分に沿って正確に書くか、「同じ」という断定を外す。"
+    },
+    {
+      "severity": "should",
+      "location": "修正内容（各DAOの箇条書き全体）",
+      "reason": "BatchSpec、insertParameter の削除、private メソッドの引数削除、withMaxRows、PreparedStatementCallback など、利用者の判断に不要な実装の羅列が多く、本題である問題と影響が埋もれる。",
+      "fix": "DAO ごとの細部を削り、「名前付きパラメータ化」「例外処理から Optional への置換」「重複パラメータの解消」という要点と代表例 1〜2 件に絞る。"
+    },
+    {
+      "severity": "should",
+      "location": "問題・背景",
+      "reason": "「可読性が低く、JdbcTemplate 中心の記述が冗長だった」は issue に書かれておらず、出典のない動機の補足になっている。issue の根拠は、重複パラメータの解消と、名前付きパラメータ／JdbcClient への移行がより良いというメンテナの賛同のみ。",
+      "fix": "issue に書かれた根拠だけに絞るか、可読性や冗長性は差分からの推測だと明示する。"
+    },
+    {
+      "severity": "nit",
+      "location": "用語（JdbcTemplate / JdbcOperations / JDBC DAO）",
+      "reason": "実体は JdbcOperations 型のフィールドとセッターなのに、「JdbcTemplate」と「JdbcOperations」が説明なしに混在し、読み手が同じものか別物か迷う。",
+      "fix": "初出で「setJdbcTemplate は JdbcOperations を受け取る」と整理し、以降は表記を統一する。"
+    },
+    {
+      "severity": "nit",
+      "location": "注意点・未確認事項 > 2 項目目",
+      "reason": "「性能やテストの変化は確認していない」は、確認していない旨を書いただけで、利用者が取るべき行動につながらない。",
+      "fix": "移行後の回帰確認が必要な観点（テーブル接頭辞、各種 DB）を具体的に示すか、項目を削除する。"
+    }
+  ]
+}

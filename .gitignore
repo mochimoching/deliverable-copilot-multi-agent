@@ -1,0 +1,57 @@
+# ============================================================
+# Copilot マルチエージェント環境 成果物用 .gitignore
+# 方針：成果物（定義・コード・ドキュメント・outputs/）は追跡し、
+# 実行時に生成される作業物・キャッシュ・秘密情報は追跡しない。
+# ============================================================
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---- 秘密情報・認証（絶対にコミットしない） ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*credentials*
+.copilot/
+
+# ---- ハーネスの実行時生成物（再実行で作り直せるもの） ----
+# 取得した入力一式（fetcher が GitHub から再取得できる）
+stage2-harness/inputs/
+# 実行状態・中間生成物（成果物は outputs/ に移したものだけを残す）
+stage2-harness/runs/
+stage2-harness/runs-*/
+# 生ログ（Copilot CLI の JSONL 出力）
+**/logs/
+stdout-*.jsonl
+*.jsonl.tmp
+# 状態ファイルの一時書き込み・バックアップ
+*.tmp
+*.bak
+*~
+
+# ---- ローカル設定の上書き ----
+config.local.json
+
+# ---- 配布アーカイブ（リポジトリ自体が正本） ----
+*.zip
+
+# ---- Node（Copilot CLI を npm で入れた場合の残り） ----
+node_modules/
+
+# ---- エディタ・OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo

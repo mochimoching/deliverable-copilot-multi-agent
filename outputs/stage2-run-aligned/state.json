@@ -1,0 +1,2753 @@
+{
+ "version": 1,
+ "model": "claude-sonnet-5.5",
+ "created": "2026-11-18T07:50:25+00:00",
+ "budget_warned": true,
+ "items": {
+  "5158": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 7.1482,
+     "seconds": 25.4,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 10.7321,
+     "seconds": 41.2,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 12.2497,
+     "seconds": 37.9,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 4.9326,
+     "seconds": 22.9,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 5.9913,
+     "seconds": 76.5,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 41.0539,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 81,
+     "final_lines": 42,
+     "changed_lines": 63,
+     "change_ratio": 0.778,
+     "warning": true
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 28,
+     "changed_source_files": [
+      "PartitionStep.java",
+      "StepExecutionSplitter.java",
+      "RemoteStepExecutionAggregator.java",
+      "SimpleStepExecutionSplitter.java",
+      "scalability.adoc"
+     ],
+     "mentioned": [
+      "PartitionStep.java",
+      "StepExecutionSplitter.java",
+      "RemoteStepExecutionAggregator.java",
+      "SimpleStepExecutionSplitter.java",
+      "scalability.adoc"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 41.0539,
+    "credits_log": 41.0539
+   },
+   "failure": null,
+   "warnings": [
+    "検証4: draft→final の変更比率 0.778 が大きい"
+   ],
+   "started": "2026-11-18T07:50:36+00:00",
+   "input": {
+    "issue_chars": 6548,
+    "diff_chars": 20629,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 1,
+     "code_blocks_translated": 1,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "headings_translated": [
+      1,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "title_original": "Aggregator of remote partitions is not passed all worker steps upon controller restart",
+     "title_translated": "コントローラーの再起動時に、リモートパーティションのアグリゲーターへすべてのワーカーステップが渡されない",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.643,
+     "original_chars": 6428,
+     "translated_chars": 4131,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 10,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T07:54:00+00:00"
+  },
+  "5514": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 10.2896,
+     "seconds": 72.9,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 8.2051,
+     "seconds": 33.0,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 10.0574,
+     "seconds": 29.7,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 7.8507,
+     "seconds": 27.3,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 6.6097,
+     "seconds": 25.1,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 43.0125,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 71,
+     "final_lines": 61,
+     "changed_lines": 50,
+     "change_ratio": 0.704,
+     "warning": true
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 45,
+     "changed_source_files": [
+      "JobFlowExecutor.java",
+      "SimpleFlow.java"
+     ],
+     "mentioned": [
+      "JobFlowExecutor.java",
+      "SimpleFlow.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 43.0125,
+    "credits_log": 43.0125
+   },
+   "failure": null,
+   "warnings": [
+    "検証4: draft→final の変更比率 0.704 が大きい"
+   ],
+   "started": "2026-11-18T07:54:00+00:00",
+   "input": {
+    "issue_chars": 13016,
+    "diff_chars": 9272,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 8,
+     "code_blocks_translated": 8,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2,
+      2,
+      3,
+      3,
+      3
+     ],
+     "headings_translated": [
+      1,
+      2,
+      2,
+      3,
+      3,
+      3
+     ],
+     "title_original": "JobFlowExecutor leaks a StepExecution across job executions on a shared thread when no transition matches a step's ExitStatus",
+     "title_translated": "ステップの ExitStatus に一致する遷移がない場合、JobFlowExecutor が共有スレッド上でジョブ実行をまたいで StepExecution をリークする",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.754,
+     "original_chars": 12928,
+     "translated_chars": 9747,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 10,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T07:57:09+00:00"
+  },
+  "5518": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 4.1673,
+     "seconds": 13.1,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 5.5703,
+     "seconds": 27.3,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 7.1209,
+     "seconds": 26.1,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 4.6659,
+     "seconds": 23.0,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 6.735,
+     "seconds": 23.4,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 28.2594,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 75,
+     "final_lines": 46,
+     "changed_lines": 40,
+     "change_ratio": 0.533,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 29,
+     "changed_source_files": [
+      "FixedLengthTokenizer.java"
+     ],
+     "mentioned": [
+      "FixedLengthTokenizer.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 28.2594,
+    "credits_log": 28.2594
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T07:57:09+00:00",
+   "input": {
+    "issue_chars": 1927,
+    "diff_chars": 3928,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 2,
+     "code_blocks_translated": 2,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2
+     ],
+     "headings_translated": [
+      1,
+      2
+     ],
+     "title_original": "`FixedLengthTokenizer` in strict mode rejects lines when the open-ended range starts at or before the first range's min",
+     "title_translated": "厳密モードの FixedLengthTokenizer が、開放範囲の開始位置が最初の範囲の min 以下の場合に行を拒否する",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.729,
+     "original_chars": 1879,
+     "translated_chars": 1370,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 12,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T07:59:02+00:00"
+  },
+  "5519": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 4.0168,
+     "seconds": 12.8,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 5.6962,
+     "seconds": 27.9,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 7.2563,
+     "seconds": 26.4,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 4.0294,
+     "seconds": 18.3,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.9532,
+     "seconds": 18.8,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 25.9519,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 72,
+     "final_lines": 47,
+     "changed_lines": 43,
+     "change_ratio": 0.597,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 37,
+     "changed_source_files": [
+      "DelimitedLineTokenizer.java"
+     ],
+     "mentioned": [
+      "DelimitedLineTokenizer.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 25.9519,
+    "credits_log": 25.9519
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T07:59:02+00:00",
+   "input": {
+    "issue_chars": 1598,
+    "diff_chars": 3157,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 2,
+     "code_blocks_translated": 2,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2
+     ],
+     "headings_translated": [
+      1,
+      2
+     ],
+     "title_original": "`DelimitedLineTokenizer` throws `StringIndexOutOfBoundsException` when a field is a single quote character",
+     "title_translated": "フィールドが単一の引用符文字の場合に DelimitedLineTokenizer が StringIndexOutOfBoundsException をスローする",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.789,
+     "original_chars": 1554,
+     "translated_chars": 1226,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 8,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T08:01:44+00:00"
+  },
+  "5520": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 3.8315,
+     "seconds": 12.0,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 5.1398,
+     "seconds": 26.6,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 6.3849,
+     "seconds": 21.3,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 4.1587,
+     "seconds": 20.6,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.5102,
+     "seconds": 19.1,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 24.0251,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 47,
+     "final_lines": 26,
+     "changed_lines": 29,
+     "change_ratio": 0.617,
+     "warning": true
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 30,
+     "changed_source_files": [
+      "FlatFileItemReaderBuilder.java"
+     ],
+     "mentioned": [
+      "FlatFileItemReaderBuilder.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 24.0251,
+    "credits_log": 24.0251
+   },
+   "failure": null,
+   "warnings": [
+    "検証4: draft→final の変更比率 0.617 が大きい"
+   ],
+   "started": "2026-11-18T08:01:44+00:00",
+   "input": {
+    "issue_chars": 1390,
+    "diff_chars": 2794,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 2,
+     "code_blocks_translated": 2,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2
+     ],
+     "headings_translated": [
+      1,
+      2
+     ],
+     "title_original": "`FlatFileItemReaderBuilder.addComment()` throws `UnsupportedOperationException` after `comments(...)`",
+     "title_translated": "FlatFileItemReaderBuilder.addComment()が comments(...) の後に UnsupportedOperationException をスローする",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.868,
+     "original_chars": 1346,
+     "translated_chars": 1169,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 8,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T08:03:24+00:00"
+  },
+  "5527": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 8.0354,
+     "seconds": 27.9,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 7.9205,
+     "seconds": 30.9,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 10.6418,
+     "seconds": 32.6,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 6.5065,
+     "seconds": 24.3,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 6.3832,
+     "seconds": 23.1,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 39.4874,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 97,
+     "final_lines": 51,
+     "changed_lines": 65,
+     "change_ratio": 0.67,
+     "warning": true
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 55,
+     "changed_source_files": [
+      "ChunkOrientedStep.java"
+     ],
+     "mentioned": [
+      "ChunkOrientedStep.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 39.4874,
+    "credits_log": 39.4874
+   },
+   "failure": null,
+   "warnings": [
+    "検証4: draft→final の変更比率 0.67 が大きい"
+   ],
+   "started": "2026-11-18T08:03:24+00:00",
+   "input": {
+    "issue_chars": 6897,
+    "diff_chars": 15171,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 2,
+     "code_blocks_translated": 2,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2,
+      2,
+      3,
+      3,
+      3
+     ],
+     "headings_translated": [
+      1,
+      2,
+      2,
+      3,
+      3,
+      3
+     ],
+     "title_original": "Misleading logs in scan mode without retries",
+     "title_translated": "リトライなしのスキャンモードにおける誤解を招くログ",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.7,
+     "original_chars": 6821,
+     "translated_chars": 4778,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 10,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T08:05:43+00:00"
+  },
+  "5539": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 4.7008,
+     "seconds": 15.0,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 6.2676,
+     "seconds": 31.3,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 7.477,
+     "seconds": 24.6,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 4.7922,
+     "seconds": 22.5,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 5.697,
+     "seconds": 21.5,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 28.9346,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 72,
+     "final_lines": 51,
+     "changed_lines": 30,
+     "change_ratio": 0.417,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 43,
+     "changed_source_files": [
+      "JpaPagingItemReader.java"
+     ],
+     "mentioned": [
+      "JpaPagingItemReader.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 28.9346,
+    "credits_log": 28.9346
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T08:05:43+00:00",
+   "input": {
+    "issue_chars": 2624,
+    "diff_chars": 3594,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 1,
+     "code_blocks_translated": 1,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2,
+      2,
+      3
+     ],
+     "headings_translated": [
+      1,
+      2,
+      2,
+      3
+     ],
+     "title_original": "NullPointerException when closing an unopened JpaPagingItemReader",
+     "title_translated": "未オープンの JpaPagingItemReader をクローズする際の NullPointerException",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.863,
+     "original_chars": 2561,
+     "translated_chars": 2210,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 8,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T08:07:39+00:00"
+  },
+  "5556": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 3.8681,
+     "seconds": 11.9,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 5.8456,
+     "seconds": 30.5,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 6.5007,
+     "seconds": 22.1,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 4.3442,
+     "seconds": 22.2,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.9451,
+     "seconds": 19.5,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 25.5037,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 44,
+     "final_lines": 45,
+     "changed_lines": 23,
+     "change_ratio": 0.523,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 34,
+     "changed_source_files": [
+      "appendix.adoc"
+     ],
+     "mentioned": [
+      "appendix.adoc"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 25.5037,
+    "credits_log": 25.5037
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T08:07:39+00:00",
+   "input": {
+    "issue_chars": 1573,
+    "diff_chars": 1762,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 0,
+     "code_blocks_translated": 0,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2,
+      2,
+      3,
+      3
+     ],
+     "headings_translated": [
+      1,
+      2,
+      2,
+      3,
+      3
+     ],
+     "title_original": "JpaItemWriter description in Appendix of documentation is wrong",
+     "title_translated": "ドキュメントの付録にある JpaItemWriter の説明が誤っている",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.775,
+     "original_chars": 1501,
+     "translated_chars": 1164,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 8,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T08:09:25+00:00"
+  },
+  "5558": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 6.0881,
+     "seconds": 20.5,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 7.0639,
+     "seconds": 33.4,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 10.3195,
+     "seconds": 37.3,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 6.0105,
+     "seconds": 25.1,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 7.6335,
+     "seconds": 29.2,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 37.1155,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 104,
+     "final_lines": 69,
+     "changed_lines": 85,
+     "change_ratio": 0.817,
+     "warning": true
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 58,
+     "changed_source_files": [
+      "ChunkOrientedStep.java"
+     ],
+     "mentioned": [
+      "ChunkOrientedStep.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 37.1155,
+    "credits_log": 37.1155
+   },
+   "failure": null,
+   "warnings": [
+    "検証4: draft→final の変更比率 0.817 が大きい"
+   ],
+   "started": "2026-11-18T08:09:25+00:00",
+   "input": {
+    "issue_chars": 4420,
+    "diff_chars": 7422,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 1,
+     "code_blocks_translated": 1,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2,
+      2,
+      3
+     ],
+     "headings_translated": [
+      1,
+      2,
+      2,
+      3
+     ],
+     "title_original": "Restart after a failure during chunk scanning skips the remaining items of the chunk in ChunkOrientedStep",
+     "title_translated": "ChunkOrientedStepでチャンクのスキャン中に失敗した後の再起動時に、チャンクの残りのアイテムがスキップされる",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.692,
+     "original_chars": 4360,
+     "translated_chars": 3017,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 10,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T08:11:51+00:00"
+  },
+  "5562": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 4.7231,
+     "seconds": 16.9,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 5.5538,
+     "seconds": 29.3,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 7.0533,
+     "seconds": 26.8,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 4.5442,
+     "seconds": 23.6,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 5.526,
+     "seconds": 20.7,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 27.4004,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 73,
+     "final_lines": 59,
+     "changed_lines": 37,
+     "change_ratio": 0.507,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 23,
+     "changed_source_files": [
+      ".gitignore"
+     ],
+     "mentioned": [
+      ".gitignore"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 27.4004,
+    "credits_log": 27.4004
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T08:11:51+00:00",
+   "input": {
+    "issue_chars": 3009,
+    "diff_chars": 519,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 0,
+     "code_blocks_translated": 0,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2,
+      2,
+      3
+     ],
+     "headings_translated": [
+      1,
+      2,
+      2,
+      3
+     ],
+     "title_original": "Failed job launch leaves an orphan JobInstance behind",
+     "title_translated": "ジョブ起動の失敗により孤立した JobInstance が残る",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.642,
+     "original_chars": 2945,
+     "translated_chars": 1891,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 10,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T08:13:49+00:00"
+  },
+  "5563": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 6.8553,
+     "seconds": 23.5,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 6.976,
+     "seconds": 31.5,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 8.3849,
+     "seconds": 28.0,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 5.9344,
+     "seconds": 26.6,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 5.5987,
+     "seconds": 20.6,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 33.7493,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": false,
+     "has_bug_section": false,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 44,
+     "final_lines": 38,
+     "changed_lines": 26,
+     "change_ratio": 0.591,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 32,
+     "changed_source_files": [
+      "EnableBatchProcessing.java",
+      "LateBindingAutowireCandidateResolver.java",
+      "LateBindingBeanFactoryPostProcessor.java",
+      "DefaultBatchConfiguration.java"
+     ],
+     "mentioned": [
+      "EnableBatchProcessing.java",
+      "LateBindingAutowireCandidateResolver.java",
+      "LateBindingBeanFactoryPostProcessor.java",
+      "DefaultBatchConfiguration.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 33.7493,
+    "credits_log": 33.7493
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T08:13:49+00:00",
+   "input": {
+    "issue_chars": 6122,
+    "diff_chars": 7935,
+    "diff_truncated": false
+   },
+   "is_bug": false,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 2,
+     "code_blocks_translated": 2,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "headings_translated": [
+      1,
+      2,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "title_original": "Provide a `@JobParameter` annotation for more convenient access to variables in `JobParameters`.",
+     "title_translated": "JobParameters内の変数により便利にアクセスするための @JobParameter アノテーションを提供してほしい",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.783,
+     "original_chars": 5994,
+     "translated_chars": 4694,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 10,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T08:16:00+00:00"
+  },
+  "5566": {
+   "status": "failed",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 9.2468,
+     "seconds": 28.4,
+     "attempts": 2,
+     "error": null
+    }
+   },
+   "credits_total": 9.2468,
+   "verdict": null,
+   "validation": {},
+   "failure": "翻訳検証: 翻訳検証に不合格（リトライ後も）",
+   "warnings": [
+    "入力サイズ 51638 chars が警告閾値 45000 を超過"
+   ],
+   "started": "2026-11-18T08:16:00+00:00",
+   "input": {
+    "issue_chars": 2610,
+    "diff_chars": 49028,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "failed",
+    "reason": "翻訳検証に不合格（リトライ後も）",
+    "validation": {
+     "code_blocks_original": 1,
+     "code_blocks_translated": 1,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2,
+      2,
+      3
+     ],
+     "headings_translated": [
+      1,
+      2,
+      2,
+      3
+     ],
+     "title_original": "BatchObservabilityBeanPostProcessor doesn't respect manually configured `observationRegistry`",
+     "title_translated": "BatchObservabilityBeanPostProcessorが手動で設定された`observationRegistry`を尊重しない",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": true,
+     "char_ratio": 0.847,
+     "original_chars": 2550,
+     "translated_chars": 2159,
+     "errors": [
+      "タイトル（先頭の見出し）にバッククォートが含まれている"
+     ]
+    }
+   },
+   "finished": "2026-11-18T08:16:29+00:00"
+  },
+  "5570": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 4.5294,
+     "seconds": 14.3,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 4.5331,
+     "seconds": 23.7,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 5.9472,
+     "seconds": 23.1,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 4.6257,
+     "seconds": 23.3,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.8725,
+     "seconds": 19.6,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 24.5079,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": false,
+     "has_bug_section": false,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 57,
+     "final_lines": 36,
+     "changed_lines": 36,
+     "change_ratio": 0.632,
+     "warning": true
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 19,
+     "skipped": "diff が無い題材のためファイル名チェックは省略"
+    },
+    "credits_consistent": true,
+    "credits_state": 24.5079,
+    "credits_log": 24.5079
+   },
+   "failure": null,
+   "warnings": [
+    "検証4: draft→final の変更比率 0.632 が大きい"
+   ],
+   "started": "2026-11-18T08:16:29+00:00",
+   "input": {
+    "issue_chars": 2365,
+    "diff_chars": 0,
+    "diff_truncated": false,
+    "has_diff": false
+   },
+   "is_bug": false,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 1,
+     "code_blocks_translated": 1,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2,
+      2,
+      3
+     ],
+     "headings_translated": [
+      1,
+      2,
+      2,
+      3
+     ],
+     "title_original": "JdbcJobExecutionDao.findJobExecutions issues 1 + 3N queries for N executions",
+     "title_translated": "JdbcJobExecutionDao.findJobExecutionsがN件の実行に対して1 + 3N回のクエリを発行する問題",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.706,
+     "original_chars": 2305,
+     "translated_chars": 1627,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 8,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T08:18:13+00:00"
+  },
+  "5576": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 9.424,
+     "seconds": 29.2,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 9.0754,
+     "seconds": 35.9,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 10.7789,
+     "seconds": 31.4,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 4.9475,
+     "seconds": 24.1,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 6.21,
+     "seconds": 23.2,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 40.4358,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 80,
+     "final_lines": 58,
+     "changed_lines": 38,
+     "change_ratio": 0.475,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 40,
+     "changed_source_files": [
+      "SplitState.java",
+      "StepContextRepeatCallback.java",
+      "AbstractStep.java",
+      "AsyncItemProcessor.java",
+      "ChunkOrientedStep.java",
+      "ChunkTaskExecutorItemWriter.java"
+     ],
+     "mentioned": [
+      "SplitState.java",
+      "StepContextRepeatCallback.java",
+      "AbstractStep.java",
+      "AsyncItemProcessor.java",
+      "ChunkOrientedStep.java",
+      "ChunkTaskExecutorItemWriter.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 40.4358,
+    "credits_log": 40.4358
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T08:18:13+00:00",
+   "input": {
+    "issue_chars": 10194,
+    "diff_chars": 21491,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 3,
+     "code_blocks_translated": 3,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2
+     ],
+     "headings_translated": [
+      1,
+      2
+     ],
+     "title_original": "Job-scoped beans are not usable from worker threads of multi-threaded steps and parallel flows",
+     "title_translated": "ジョブスコープのBeanがマルチスレッドステップおよび並列フローのワーカースレッドで使用できない問題",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.926,
+     "original_chars": 10150,
+     "translated_chars": 9397,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 9,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T08:20:37+00:00"
+  },
+  "5585": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 4.3478,
+     "seconds": 14.1,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 7.0929,
+     "seconds": 28.5,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 9.3522,
+     "seconds": 29.1,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 5.0087,
+     "seconds": 24.2,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 5.9028,
+     "seconds": 21.9,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 31.7044,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 72,
+     "final_lines": 53,
+     "changed_lines": 41,
+     "change_ratio": 0.569,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 28,
+     "changed_source_files": [
+      "ItemProcessListener.java",
+      "ItemReadListener.java",
+      "ItemWriteListener.java",
+      "ChunkOrientedStep.java",
+      "intercepting-execution.adoc"
+     ],
+     "mentioned": [
+      "ItemProcessListener.java",
+      "ItemReadListener.java",
+      "ItemWriteListener.java",
+      "ChunkOrientedStep.java",
+      "intercepting-execution.adoc"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 31.7044,
+    "credits_log": 31.7044
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T08:20:37+00:00",
+   "input": {
+    "issue_chars": 2172,
+    "diff_chars": 15869,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 0,
+     "code_blocks_translated": 0,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2
+     ],
+     "headings_translated": [
+      1,
+      2
+     ],
+     "title_original": "listener exceptions are skippable in scan mode but fatal elsewhere",
+     "title_translated": "リスナーの例外がスキャンモードではスキップ可能だが、それ以外では致命的になる",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.643,
+     "original_chars": 2128,
+     "translated_chars": 1368,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 9,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T08:22:36+00:00"
+  },
+  "5586": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 13.1976,
+     "seconds": 40.4,
+     "attempts": 2,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 6.823,
+     "seconds": 27.8,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 8.7765,
+     "seconds": 27.5,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 6.7504,
+     "seconds": 24.8,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 5.9111,
+     "seconds": 22.5,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 41.4586,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 57,
+     "final_lines": 49,
+     "changed_lines": 42,
+     "change_ratio": 0.737,
+     "warning": true
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 14,
+     "changed_source_files": [
+      "migration-mariadb.sql"
+     ],
+     "mentioned": [
+      "migration-mariadb.sql"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 41.4586,
+    "credits_log": 41.4586
+   },
+   "failure": null,
+   "warnings": [
+    "検証4: draft→final の変更比率 0.737 が大きい"
+   ],
+   "started": "2026-11-18T08:22:36+00:00",
+   "input": {
+    "issue_chars": 4836,
+    "diff_chars": 7217,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 3,
+     "code_blocks_translated": 3,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2
+     ],
+     "headings_translated": [
+      1,
+      2
+     ],
+     "title_original": "MariaDB 6.0 migration fails when renaming `BATCH_JOB_SEQ`",
+     "title_translated": "MariaDB 6.0 マイグレーションで BATCH_JOB_SEQ のリネームに失敗する",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.951,
+     "original_chars": 4792,
+     "translated_chars": 4559,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 9,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T08:24:59+00:00"
+  },
+  "5589": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 3.7095,
+     "seconds": 10.8,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 5.3438,
+     "seconds": 26.1,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 6.3965,
+     "seconds": 22.6,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 4.425,
+     "seconds": 19.8,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 4.8351,
+     "seconds": 19.3,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 24.7099,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 52,
+     "final_lines": 31,
+     "changed_lines": 34,
+     "change_ratio": 0.654,
+     "warning": true
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 40,
+     "changed_source_files": [
+      "MongoCursorItemReader.java"
+     ],
+     "mentioned": [
+      "MongoCursorItemReader.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 24.7099,
+    "credits_log": 24.7099
+   },
+   "failure": null,
+   "warnings": [
+    "検証4: draft→final の変更比率 0.654 が大きい"
+   ],
+   "started": "2026-11-18T08:24:59+00:00",
+   "input": {
+    "issue_chars": 1191,
+    "diff_chars": 2722,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 0,
+     "code_blocks_translated": 0,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "headings_translated": [
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "title_original": "MongoCursorItemReader throws NullPointerException when closed before opening",
+     "title_translated": "MongoCursorItemReaderがオープン前にクローズされるとNullPointerExceptionをスローする",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.78,
+     "original_chars": 1147,
+     "translated_chars": 895,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 8,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T08:26:38+00:00"
+  },
+  "5594": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 6.0948,
+     "seconds": 21.2,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 8.8556,
+     "seconds": 35.8,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 12.7068,
+     "seconds": 35.3,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 4.9164,
+     "seconds": 21.8,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 7.4644,
+     "seconds": 28.5,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 40.038,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 98,
+     "final_lines": 75,
+     "changed_lines": 48,
+     "change_ratio": 0.49,
+     "warning": false
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 53,
+     "changed_source_files": [
+      "ChunkOrientedStep.java"
+     ],
+     "mentioned": [
+      "ChunkOrientedStep.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 40.038,
+    "credits_log": 40.038
+   },
+   "failure": null,
+   "warnings": [],
+   "started": "2026-11-18T08:26:38+00:00",
+   "input": {
+    "issue_chars": 4456,
+    "diff_chars": 27350,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 2,
+     "code_blocks_translated": 2,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2,
+      2,
+      3
+     ],
+     "headings_translated": [
+      1,
+      2,
+      2,
+      3
+     ],
+     "title_original": "ChunkOrientedStep does not restore the step execution when a chunk transaction is not committed",
+     "title_translated": "チャンクトランザクションがコミットされない場合に ChunkOrientedStep がステップ実行を復元しない",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.739,
+     "original_chars": 4396,
+     "translated_chars": 3247,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 10,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T08:29:01+00:00"
+  },
+  "5597": {
+   "status": "done",
+   "roles": {
+    "translator": {
+     "ok": true,
+     "credits": 4.3426,
+     "seconds": 14.4,
+     "attempts": 1,
+     "error": null
+    },
+    "planner": {
+     "ok": true,
+     "credits": 6.4827,
+     "seconds": 33.8,
+     "attempts": 1,
+     "error": null
+    },
+    "writer": {
+     "ok": true,
+     "credits": 7.9097,
+     "seconds": 26.8,
+     "attempts": 1,
+     "error": null
+    },
+    "reviewer": {
+     "ok": true,
+     "credits": 5.7322,
+     "seconds": 26.5,
+     "attempts": 1,
+     "error": null
+    },
+    "fixer": {
+     "ok": true,
+     "credits": 5.2716,
+     "seconds": 20.5,
+     "attempts": 1,
+     "error": null
+    }
+   },
+   "credits_total": 29.7388,
+   "verdict": "revise",
+   "validation": {
+    "no_write_planner": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "plan_contract": true,
+    "no_write_reviewer": {
+     "changed_files": [],
+     "cli_files_modified": []
+    },
+    "review_schema": true,
+    "summary_sections": {
+     "ok": true,
+     "missing_sections": [],
+     "has_h1": false,
+     "section_order_ok": true,
+     "bug": true,
+     "has_bug_section": true,
+     "errors": []
+    },
+    "attribution": {
+     "ok": true,
+     "attribution_count": 1,
+     "style": "summary",
+     "line": "*このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました。*"
+    },
+    "preamble_guard_final": false,
+    "diff_stats": {
+     "draft_lines": 88,
+     "final_lines": 43,
+     "changed_lines": 62,
+     "change_ratio": 0.705,
+     "warning": true
+    },
+    "identifiers": {
+     "ok": true,
+     "code_spans": 25,
+     "changed_source_files": [
+      "MultiResourceItemWriter.java"
+     ],
+     "mentioned": [
+      "MultiResourceItemWriter.java"
+     ]
+    },
+    "credits_consistent": true,
+    "credits_state": 29.7388,
+    "credits_log": 29.7388
+   },
+   "failure": null,
+   "warnings": [
+    "検証4: draft→final の変更比率 0.705 が大きい"
+   ],
+   "started": "2026-11-18T08:29:01+00:00",
+   "input": {
+    "issue_chars": 2324,
+    "diff_chars": 6333,
+    "diff_truncated": false
+   },
+   "is_bug": true,
+   "translation": {
+    "status": "done",
+    "validation": {
+     "code_blocks_original": 1,
+     "code_blocks_translated": 1,
+     "code_blocks_identical": true,
+     "headings_original": [
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "headings_translated": [
+      1,
+      2,
+      3,
+      3,
+      3,
+      3,
+      3
+     ],
+     "title_original": "MultiResourceItemWriter does not validate non-positive itemCountLimitPerResource values",
+     "title_translated": "MultiResourceItemWriterがitemCountLimitPerResourceの正でない値を検証しない",
+     "title_identical_to_original": false,
+     "title_has_japanese": true,
+     "title_has_backtick": false,
+     "char_ratio": 0.629,
+     "original_chars": 2280,
+     "translated_chars": 1435,
+     "errors": [],
+     "attribution": {
+      "attribution_count": 1,
+      "style": "translation",
+      "line": "*（このドキュメントは生成AI(GitHub Copilot / Claude Sonnet 5.5)によって2026年11月18日に生成されました）*"
+     },
+     "postprocess": {
+      "linkify": true,
+      "attribution": true
+     }
+    }
+   },
+   "verdict_raw": "revise",
+   "review_issues": 9,
+   "summary_postprocess": {
+    "attribution": true,
+    "linkify": true,
+    "preamble_guard": false
+   },
+   "finished": "2026-11-18T08:31:04+00:00"
+  }
+ }
+}
