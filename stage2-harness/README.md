@@ -13,10 +13,12 @@
 | ファイル | 役割 |
 |---|---|
 | `harness.py` | 進行役。対象リスト・状態復元・役割遷移・予算ガード |
-| `fetcher.py` | GitHub からの issue 取得。既存パイプライン（github_issue_translate）の認証済みクライアントを import して再利用し、`inputs/` に保存する |
+| `fetcher.py` | GitHub からの issue 取得。同梱の `github_client.py` で取得し、`inputs/` に保存する |
+| `github_client.py` | GitHub API クライアント（標準ライブラリのみ）。認証は環境変数 `GITHUB_TOKEN` が本線（後述） |
 | `copilot_runner.py` | Copilot CLI 呼び出しと JSONL 解析（最終応答・credits・tokens の分離） |
 | `validate.py` | 決定的検証8項目（JSONスキーマ、必須セクション、見出し前混入ガード、識別子、計画契約、権限逸脱ほか）＋翻訳検証＋後処理（AI明示・#参照リンク化） |
-| `config.json` | モデル固定（claude-sonnet-5.5）、予算 warn 300 / stop 600、入力閾値、必須セクション、取得設定（`fetch`）、ガイドライン正本の場所（`guidelines_dir`）等 |
+| `guidelines/` | 役割の基準になるガイドライン3本（TRANSLATION／SUMMARY／REVIEW）。同梱 |
+| `config.json` | モデル固定（claude-sonnet-5.5）、予算 warn 300 / stop 600、入力閾値、必須セクション、取得設定（`fetch`）、ガイドラインの場所（`guidelines_dir`、既定は同梱の `guidelines`）等 |
 | `inputs/` | 自前取得の保存先（`<repo>/<milestone>/<state>/current/markdown/` に `issues/` と `issues_diff/`） |
 | `runs/` | 実行状態と成果物（下記） |
 
@@ -48,10 +50,15 @@ python3 harness.py --runs-dir runs-e2e   # 状態一式を別フォルダで実�
 
 ## 取得工程（fetcher.py）
 
-- 取得は既存パイプライン（`~/workspace/github_issue_translate`）の
-  `github_client.py`（GitHubClient）と `fetch.py`（issue_markdown）を
-  import して再利用します。認証は custom.github コネクタの
-  dynamic_credentials サロゲート経由で、新しい認証情報は扱いません。
+- 取得は同梱の `github_client.py`（標準ライブラリのみ）で行い、
+  外部のプロジェクトには依存しません。認証は2経路あります。
+  - **本線：環境変数 `GITHUB_TOKEN`**（Personal Access Token）を
+    Authorization ヘッダで送ります。これだけで自己完結します。
+  - **フォールバック：`GITHUB_TOKEN` が未設定の場合のみ**、Muse
+    環境専用の経路（custom.github コネクタの dynamic_credentials
+    サロゲート経由）を使います。他の環境では使えないので、その場合は
+    `GITHUB_TOKEN` を設定してください。どちらの経路でも、トークンの
+    実値がファイルやログに残ることはありません。
 - 設定は `config.json` の `fetch` 節です：`owner` / `repo` / `milestone` /
   `state`（closed）/ `order`（asc/desc）/ `max_issues` / `issue_numbers`
   （null なら一覧から取得）/ `max_comments` / `max_diff_size`。
@@ -77,14 +84,14 @@ python3 harness.py --runs-dir runs-e2e   # 状態一式を別フォルダで実�
 
 ## ガイドラインへの準拠
 
-役割の基準は、ユーザーのガイドライン正本にそろえてあります
-（Claude 側パイプライン github_issue_translate と同じ方式）。
+役割の基準は、ユーザーのガイドラインにそろえてあります。
 
-- **正本は1か所**：`config.json` の `guidelines_dir`（既定は
-  `~/workspace/github_issue_translate`）にある `TRANSLATION_GUIDELINE.md`／
-  `SUMMARY_GUIDELINE.md`／`REVIEW_GUIDELINE.md`（ファイル名は
-  `guideline_files` で変更可）。ハーネスは実行時に読み込み、各役割の
-  プロンプトに全文を埋め込んで渡します。
+- **ガイドラインは同梱**：`guidelines/` にある `TRANSLATION_GUIDELINE.md`／
+  `SUMMARY_GUIDELINE.md`／`REVIEW_GUIDELINE.md` の3本です
+  （`config.json` の `guidelines_dir`、既定は相対指定の `guidelines` で、
+  ハーネスの置き場所を基準に解決します。絶対パスで別の場所を指定する
+  こともできます。ファイル名は `guideline_files` で変更可）。
+  ハーネスは実行時に読み込み、各役割のプロンプトに全文を埋め込んで渡します。
 - **分担**：translator は TRANSLATION_GUIDELINE、planner／writer は
   SUMMARY_GUIDELINE が基準です。reviewer は REVIEW_GUIDELINE を渡した
   うえで、プロンプト冒頭で立脚点を「想定読者ペルソナ（Spring Batch を

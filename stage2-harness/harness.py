@@ -4,11 +4,10 @@
 取得（fetcher.py）→ translator → planner → writer → reviewer → fixer を
 件ごとに新規プロセスで直列に回し、決定的検証（validate.py）を通った
 件だけを done にする一気通貫の基盤。
-役割の基準は、ユーザーのガイドライン正本（config の guidelines_dir、
-既定は github_issue_translate の TRANSLATION / SUMMARY / REVIEW の
+役割の基準は、同梱のガイドライン（config の guidelines_dir、既定は
+ハーネス内の guidelines/ にある TRANSLATION / SUMMARY / REVIEW の
 各ガイドライン）をプロンプトに全文埋め込んで渡す。AI明示と #参照の
-リンク化はモデルに任せず、ハーネスの決定的後処理で適用する
-（Claude 側パイプラインと同じ分担）。
+リンク化はモデルに任せず、ハーネスの決定的後処理で適用する。
 状態は runs/state.json（原子的更新）、呼び出し記録は runs/run-log.jsonl
 （追記型）に即時永続化し、中断・再起動からは state だけで再開できる。
 
@@ -131,10 +130,10 @@ _GUIDELINES: dict = {}
 
 
 def load_guidelines(cfg: dict) -> dict:
-    """ガイドライン正本（config の guidelines_dir）を読み込む。
+    """ガイドライン（config の guidelines_dir）を読み込む。
 
-    正本は1か所（既定は ~/workspace/github_issue_translate）だけに置き、
-    Claude 側パイプラインと同じく、プロンプトに全文を埋め込んで渡す。
+    既定はハーネス同梱の guidelines/（相対指定はハーネスの置き場所を
+    基準に解決する。絶対パス指定も可）。プロンプトに全文を埋め込んで渡す。
     """
     global _GUIDELINES
     if _GUIDELINES:

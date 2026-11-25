@@ -29,7 +29,7 @@
   "summary": "SUMMARY_GUIDELINE.md",
   "translation": "TRANSLATION_GUIDELINE.md"
  },
- "guidelines_dir": "/home/hatch/workspace/github_issue_translate",
+ "guidelines_dir": "guidelines",
  "input_base": null,
  "input_warn_chars": 45000,
  "model": "claude-sonnet-5.5",

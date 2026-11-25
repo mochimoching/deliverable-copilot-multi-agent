@@ -9,7 +9,7 @@ Copilot マルチエージェント環境の実装一式です。セットアッ
 | `.github/agents/` | エージェント定義5種（translator／planner／writer／reviewer／fixer）。リポジトリにそのまま配置できる形 |
 | `stage1-README.md` | 第1段階スターターパックの説明と前提 |
 | `TRIAL.md` | 第1段階試行の記録（実施済み分を含む） |
-| `stage2-harness/` | 第2段階ハーネスの実装（harness.py／fetcher.py／copilot_runner.py／validate.py／config.json／README）。GitHub からの取得→翻訳→計画→執筆→レビュー→修正→検証まで一気通貫。モデルは claude-sonnet-5.5 固定、予算ガード warn 300／stop 600 |
+| `stage2-harness/` | 第2段階ハーネスの実装（harness.py／fetcher.py／github_client.py／copilot_runner.py／validate.py／config.json／README／guidelines/）。外部プロジェクトに依存せず自己完結（取得の認証は環境変数 `GITHUB_TOKEN`）。GitHub からの取得→翻訳→計画→執筆→レビュー→修正→検証まで一気通貫。モデルは claude-sonnet-5.5 固定、予算ガード warn 300／stop 600 |
 | `docs/setup-guide.md` | **セットアップ手順**（事前確認→定義配置→VS Code試行→CLI導入→ハーネス配置→運用ルール→チェックリスト） |
 | `docs/stage2-harness-design.md` | 第2段階設計書（全12章・決定事項含む） |
 | `docs/copilot-multi-agent-harness-report.pdf` | 本体レポート第2版（A4・13ページ） |

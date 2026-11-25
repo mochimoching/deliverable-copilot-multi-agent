@@ -1,27 +1,43 @@
 """GitHub issue 取得担当（第2段階ハーネス）。
 
-取得は既存パイプライン（~/workspace/github_issue_translate）の認証済み
-実装を import して再利用する。認証は custom.github コネクタの
-dynamic_credentials サロゲート経由で、トークンの実値はこのコードにも
-環境変数にも現れない。新しい認証情報は扱わない。
+取得は同梱の github_client.py（標準ライブラリのみ）で行い、外部の
+プロジェクトには依存しない。認証は環境変数 GITHUB_TOKEN が本線で、
+未設定の場合のみ Muse 環境専用のフォールバック（custom.github
+コネクタ経由）を使う。詳細は github_client.py の冒頭を参照。
 
 保存先はハーネス自前の inputs/ 配下で、レイアウトは従来の input_base と
 同一（<repo>/<milestone>/<state>/current/markdown/{issues,issues_diff}）
 にそろえ、input_base の意味を変えずに差し替えられるようにする。
+出力形式（issue_markdown）は従来実装とバイト単位で互換に保つ。
 """
 from __future__ import annotations
 
 import os
-import sys
 
-_TRANSLATE_DIR = os.path.expanduser("~/workspace/github_issue_translate")
-if _TRANSLATE_DIR not in sys.path:
-    sys.path.insert(0, _TRANSLATE_DIR)
-
-from github_client import GitHubClient, normalize_issue  # noqa: E402
-from fetch import issue_markdown  # noqa: E402
+from github_client import GitHubClient, normalize_issue
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+
+
+def issue_markdown(issue):
+    """個別issue Markdown（従来実装と同一形式）。"""
+    lines = [
+        f"# {issue['title']}",
+        "",
+        f"**Issue番号**: #{issue['number']}",
+        f"**状態**: {issue['state']} | **作成者**: {issue['author']} | **作成日**: {issue['created_at'][:10]}",
+    ]
+    if issue["labels"]:
+        lines.append(f"**ラベル**: {', '.join(issue['labels'])}")
+    if issue["milestone"]:
+        lines.append(f"**マイルストーン**: {issue['milestone']}")
+    lines += [f"**URL**: {issue['url']}", "", "## 内容", "", issue["body"]]
+    if issue["comments"]:
+        lines += ["", "## コメント"]
+        for i, c in enumerate(issue["comments"], 1):
+            lines += ["", f"### コメント {i} by {c['author']} ({c['created_at'][:10]})",
+                      "", c["body"]]
+    return "\n".join(lines) + "\n"
 
 
 def inputs_markdown_dir(cfg: dict) -> str:
@@ -46,7 +62,7 @@ def effective_input_base(cfg: dict) -> str:
 
 def _write_diff(diff_dir: str, issue: dict, closing: dict,
                 client: GitHubClient, max_diff_size: int) -> bool:
-    """closing PR / commit の diff を fetch.py と同じ形式で保存する。"""
+    """closing PR / commit の diff を従来形式で保存する。"""
     if closing["type"] == "pr":
         text, url = client.get_pr_diff(closing["number"], max_diff_size)
         ref = f"PR #{closing['number']} ({closing['created_at']})"
